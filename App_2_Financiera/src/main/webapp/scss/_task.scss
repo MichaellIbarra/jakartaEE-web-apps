@@ -1,0 +1,34 @@
+/* :: Taskboard CSS */
+
+.tasks {
+    padding: 0 1rem 1rem 1rem;
+    border: 1px solid #e3eaef;
+    vertical-align: top;
+    margin-bottom: 30px;
+    border-radius: .25rem;
+
+    .card {
+        white-space: normal;
+        margin-top: 1rem;
+    }
+
+    .task-header {
+        background-color: #f1f3fa;
+        padding: 1rem;
+        margin: 0 -1rem;
+    }
+}
+
+.task-list-items {
+    min-height: 100px;
+    position: relative;
+
+    &::before {
+        content: "No Tasks";
+        position: absolute;
+        line-height: 110px;
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+    }
+}

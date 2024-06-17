@@ -1,0 +1,85 @@
+/* :: 404 CSS */
+
+.colorlib-error-page-area {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-content {
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.erro-thumb img {
+    max-width: 100%;
+    height: auto;
+}
+
+.error-content h2 {
+    font-size: 48px;
+    color: #202020;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.error-content p {
+    font-size: 18px;
+    color: #636363;
+}
+
+.colorlib-btn {
+    height: 60px;
+    width: 240px;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    display: inline-block;
+    background-color: #43aed8;
+    margin-top: 50px;
+    color: #fff;
+    font-weight: 600;
+    transition-duration: 500ms;
+    text-transform: capitalize;
+    box-shadow: 0px 18px 32px 0px rgba(108, 98, 255, 0.2);
+}
+
+.colorlib-btn:hover {
+    background-color: #6c62ff;
+    color: #fff;
+}
+
+/* ---- Responsive Css ---- */
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .error-content h2 {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    .error-content p {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .error-content h2 {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {}
+
+.bg-gradient-danger {
+    background: linear-gradient(50deg, #ff5630, #ff9430) !important;
+}

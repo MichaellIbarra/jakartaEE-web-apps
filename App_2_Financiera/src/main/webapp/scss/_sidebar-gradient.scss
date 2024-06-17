@@ -1,0 +1,52 @@
+/* :: Sidebar colorfull CSS */
+
+.sidebar-color {
+    .ecaps-page-wrapper {
+        .ecaps-sidemenu-area {
+            .slimScrollDiv {
+                background-color: $primary;
+                @include box-shadow(7px 0 15px 0 rgba(69, 90, 100, .09));
+
+                .sidebar-menu {
+                    li {
+                        a {
+                            color: rgba(255, 255, 255, 0.85);
+                        }
+                    }
+                }
+
+                .sidebar-menu > li.active > a,
+                .sidebar-menu > li.menu-open > a {
+                    color: #fff;
+                    font-weight: 400;
+                    background-color: rgba(255, 255, 255, 0.15);
+                }
+            }
+        }
+    }
+
+    .sidebar-menu .treeview-menu > li.active > a {
+        background-color: rgba(31, 45, 61, 0.15);
+    }
+
+    .sidebar-menu li a i {
+        color: rgba(255, 255, 255, 0.90) !important;
+    }
+
+    .color-white {
+        color: rgba(255, 255, 255, 0.90) !important;
+    }
+
+    .ecaps-logo a {
+        background-color: #fff;
+    }
+
+    .top-header-area {
+        background-color: #fff;
+    }
+
+    .ecaps-page-wrapper .ecaps-sidemenu-area .slimScrollDiv .sidebar-menu > li.active > a,
+    .ecaps-page-wrapper .ecaps-sidemenu-area .slimScrollDiv .sidebar-menu > li.menu-open > a {
+        background-color: rgba(31, 45, 61, .15);
+    }
+}

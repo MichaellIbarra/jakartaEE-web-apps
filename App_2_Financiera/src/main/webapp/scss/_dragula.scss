@@ -1,0 +1,67 @@
+ /* :: Dragula CSS */
+
+ .dragula-example {
+     margin-bottom: 6px;
+ }
+
+ .sortable-example {
+     margin: 0;
+     padding: 0;
+
+     li {
+         padding: 6px 10px;
+         margin-bottom: 8px;
+         list-style: none;
+     }
+ }
+
+ .sortable-example-inline {
+     li {
+         margin-right: 8px;
+         display: inline-block;
+     }
+ }
+
+ [dir=rtl] .sortable-example-inline li {
+     margin-right: 0;
+     margin-left: 8px;
+ }
+
+ #sortable-3 {
+     width: 220px;
+
+     img {
+         margin-right: 8px;
+         margin-bottom: 8px;
+         width: 100px;
+         height: 100px;
+         border-radius: 999px;
+         display: block;
+         float: left;
+     }
+ }
+
+ [dir=rtl] #sortable-3 img {
+     margin-right: 0;
+     margin-left: 8px;
+     float: right;
+ }
+
+ /* :: Dragula Card CSS */
+
+ .draggable-cards {
+     &:hover{
+         cursor: pointer;
+     }
+     .card-moved .card {
+         background: #137eff;
+     }
+ }
+
+
+ .card-moved .card p,
+ .card-moved .card a,
+ .card-moved .card h4,
+ .card-moved .card h3 {
+     color: #fff !important;
+ }

@@ -1,0 +1,31 @@
+/* :: Data Table CSS */
+
+.pagination-rounded .page-link {
+    border-radius: 30px !important;
+    margin: 0 3px;
+    border: none;
+
+    @media #{$breakpoint-xs} {
+        margin: 10px 0px;
+        display: block;
+    }
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #313a46;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    cursor: pointer;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: $primary;
+    border-color: $primary;
+}

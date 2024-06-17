@@ -1,0 +1,35 @@
+/* :: Analytic CSS Area */
+
+.order-stats tbody tr td:first-child {
+    width: 70px;
+    max-width: 70px;
+}
+
+.analaytic-img {
+    width: 40px;
+    border-radius: 2px;
+}
+
+.icon-section {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 15px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.bg-primary-soft {
+    background-color: rgba(110, 0, 255, 0.1) !important;
+    color: #6e00ff !important;
+}
+
+.bg-danger-soft {
+    background-color: rgba(255, 86, 48, 0.11) !important;
+    color: #ff5630 !important;
+}
+
+.bg-success-soft {
+    background-color: rgba(7, 191, 88, 0.1) !important;
+    color: #07bf58 !important;
+}

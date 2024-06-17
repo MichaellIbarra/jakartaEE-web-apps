@@ -1,0 +1,106 @@
+/* :: Tab CSS */
+
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    font-weight: 500;
+    color: $primary;
+}
+
+.nav-pills > li > a,
+.nav-tabs > li > a {
+    color: $heading-color;
+    font-weight: 500;
+    font-size: 14px;
+
+    @media #{$breakpoint-xs} {
+        font-size: 12px;
+    }
+
+    @media #{$breakpoint-lg} {
+        font-size: 12px;
+    }
+}
+
+.tab-content {
+    padding: 20px 0 0 0;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: $primary;
+    font-size: 12px;
+
+    @media #{$breakpoint-xs} {
+        font-size: 12px;
+    }
+}
+
+.navtab-bg li > a {
+    background-color: #f8f8f8;
+    margin: 0 5px;
+}
+
+.nav-pills > a {
+    color: #6c857d;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #fff;
+}
+
+.nav-bordered {
+    border-bottom: 2px solid rgba(152, 166, 173, .25) !important;
+}
+
+.nav-bordered a.active {
+    border-bottom: 2px solid $primary !important;
+}
+
+.nav-bordered li a {
+    border: 0 !important;
+    padding: 10px 20px !important;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    border-color: #e9ecef #e9ecef #dee2e6;
+}
+
+.card-header.tab {
+    padding: 1rem 1.5rem;
+    margin-bottom: 0;
+    background-color: #edeff1;
+    border-bottom: 0 solid #f7f7f7;
+}
+
+.accordion {
+    .card .card-header {
+        background-color: transparent;
+        border-bottom: 1px solid #f1f1f1;
+        padding: 10px 25px;
+        position: relative;
+    }
+
+    h2 {
+        .btn {
+            font-weight: 500;
+            font-size: 13px;
+            padding: 0;
+            color: $primary;
+            text-decoration: none;
+
+            &:focus,
+            &:hover {
+                font-size: 13px;
+                font-weight: 500;
+                color: #038fcf;
+            }
+        }
+    }
+}

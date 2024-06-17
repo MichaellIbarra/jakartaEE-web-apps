@@ -1,0 +1,114 @@
+/* :: Avatar CSS */
+
+.avatar-area {
+    .thumb-md {
+        height: 50px;
+        @include flex(0 0 50px);
+        max-width: 50px;
+        width: 50px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .img-group .user-avatar + .user-avatar-group {
+        margin-left: -20px;
+    }
+
+    .img-group .user-avatar {
+        position: relative;
+        margin-bottom: 0;
+        display: inline-block;
+        @include flex(0 0 40px);
+        max-width: 40px;
+        width: 40px;
+        height: 40px;
+        vertical-align: middle;
+    }
+
+    .img-group .user-avatar img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include flex(0 0 30px);
+        max-width: 30px;
+        width: 30px;
+        height: 30px;
+        -webkit-box-shadow: 0 0 0 2px #b6c2e4;
+        box-shadow: 0 0 0 2px #b6c2e4;
+    }
+
+    .rounded-circle {
+        border-radius: 50% !important;
+    }
+
+    .img-group .user-avatar:focus,
+    .img-group .user-avatar:hover {
+        z-index: 2;
+    }
+
+    .thumb-xl {
+        height: 78px;
+        @include flex(0 0 78px);
+        max-width: 78px;
+        width: 78px;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .thumb-lg {
+        height: 60px;
+        @include flex(0 0 60px);
+        max-width: 60px;
+        width: 60px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .thumb-md {
+        height: 48px;
+        @include flex(0 0 48px);
+        max-width: 48px;
+        width: 48px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .thumb-sm {
+        height: 36px !important;
+        @include flex(0 0 36px);
+        max-width: 36px;
+        width: 36px;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .thumb-xs {
+        height: 32px !important;
+        @include flex(0 0 32px);
+        max-width: 32px;
+        width: 32px;
+        font-size: 10px;
+        font-weight: 700;
+    }
+
+    .img-group .avatar-badge {
+        position: absolute;
+        right: 1px;
+        @include flex(0 0 8px);
+        max-width: 8px;
+        width: 8px;
+        height: 8px;
+        border-radius: 8px;
+        -webkit-box-shadow: 0 0 0 2px #b6c2e4;
+        box-shadow: 0 0 0 2px #b6c2e4;
+        z-index: 2;
+    }
+
+    .img-group .user-avatar .online {
+        background: #1ecab8;
+    }
+
+    .img-group .user-avatar .offline {
+        background: #f1646c;
+    }
+}

@@ -1,0 +1,77 @@
+/* :: Job CSS Area */
+
+.job-content-area {
+    border: 1px solid $border-color;
+    padding: 15px;
+
+    .job-logo-icon {
+        @include flex(0 0 40px);
+        max-width: 40px;
+        width: 40px;
+    }
+
+    .job-desc-info {
+        a {
+            h6 {
+                @include transition-duration(300ms);
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    .job-button-area {
+        .job-duration {
+            border: 1px solid #ddd;
+            padding: 2px 10px;
+            display: inline-block;
+            color: $heading-color;
+            font-size: 13px;
+            font-weight: 600;
+            @include transition-duration(400ms);
+
+            &:hover {
+                background-color: $primary;
+                border-color: $primary;
+                color: $white-color;
+            }
+        }
+    }
+}
+
+.g-width-110 {
+    width: 70px !important;
+}
+
+.tag-line-area {
+    li {
+        display: inline-block;
+
+        a {
+            border: 1px solid #ddd;
+            padding: 2px 15px;
+            display: inline-block;
+            color: $heading-color;
+            border-radius: 3px;
+            @include transition-duration(400ms);
+            font-size: 12px;
+
+            &:hover {
+                background-color: $primary;
+                border-color: $primary;
+                color: $white-color;
+            }
+        }
+    }
+}
+
+.g-mx-10 {
+    margin-left: 0.71429rem !important;
+    margin-right: 0.71429rem !important;
+}
+
+.g-color-primary--hover:hover {
+    color: #72c02c !important;
+}

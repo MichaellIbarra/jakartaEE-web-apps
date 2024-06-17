@@ -1,0 +1,108 @@
+/* :: Gradients Button CSS */
+
+.btn[class*="btn-c-gradient-"] {
+    padding: 10px 24px;
+    text-shadow: none;
+    font-size: 14px;
+    color: $white-color;
+    font-weight: normal;
+    white-space: normal;
+    word-wrap: break-word;
+    @include transition(.2s ease-out);
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: $background-color;
+    @include box-shadow(0px 5px 20px 0 rgba(0, 0, 0, 0.1));
+    will-change: opacity, transform;
+    @include transition(all 0.3s ease-out);
+}
+
+.btn-c-gradient-1 {
+    background-image: -webkit-gradient(linear, left top, right top, from(#3232b7), to(#2575fc));
+    background-image: -webkit-linear-gradient(left, #3232b7 0%, #2575fc 100%);
+    background-image: -o-linear-gradient(left, #3232b7 0%, #2575fc 100%);
+    background-image: linear-gradient(to right, #3232b7 0%, #2575fc 100%);
+}
+
+.btn-c-gradient-1:hover,
+.btn.btn-c-gradient-1:not(:disabled):not(.disabled):active {
+    background-image: -webkit-gradient(linear, left top, right top, from(#2575fc), to(#3232b7));
+    background-image: -webkit-linear-gradient(left, #2575fc 0%, #3232b7 100%);
+    background-image: -o-linear-gradient(left, #2575fc 0%, #3232b7 100%);
+    background-image: linear-gradient(to right, #2575fc 0%, #3232b7 100%);
+}
+
+.btn-c-gradient-2 {
+    background-image: -webkit-gradient(linear, left top, right top, from(#4facfe), to(#00f2fe));
+    background-image: -webkit-linear-gradient(left, #4facfe 0%, #00f2fe 100%);
+    background-image: -o-linear-gradient(left, #4facfe 0%, #00f2fe 100%);
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+.btn-c-gradient-2:hover,
+.btn.btn-c-gradient-2:not(:disabled):not(.disabled):active {
+    background-image: -webkit-gradient(linear, left top, right top, from(#00f2fe), to(#4facfe));
+    background-image: -webkit-linear-gradient(left, #00f2fe 0%, #4facfe 100%);
+    background-image: -o-linear-gradient(left, #00f2fe 0%, #4facfe 100%);
+    background-image: linear-gradient(to right, #00f2fe 0%, #4facfe 100%);
+}
+
+.btn-c-gradient-3 {
+    background-image: -webkit-gradient(linear, left top, right top, from(#00cdac), to(#38f9d7));
+    background-image: -webkit-linear-gradient(left, #00cdac 0%, #38f9d7 100%);
+    background-image: -o-linear-gradient(left, #00cdac 0%, #38f9d7 100%);
+    background-image: linear-gradient(to right, #00cdac 0%, #38f9d7 100%);
+}
+
+.btn-c-gradient-3:hover,
+.btn.btn-c-gradient-3:not(:disabled):not(.disabled):active {
+    background-image: -webkit-gradient(linear, left top, right top, from(#38f9d7), to(#00cdac));
+    background-image: -webkit-linear-gradient(left, #38f9d7 0%, #00cdac 100%);
+    background-image: -o-linear-gradient(left, #38f9d7 0%, #00cdac 100%);
+    background-image: linear-gradient(to right, #38f9d7 0%, #00cdac 100%);
+}
+
+.btn-c-gradient-4 {
+    background-image: -webkit-linear-gradient(330deg, #f6d365 0%, #fda085 100%);
+    background-image: -o-linear-gradient(330deg, #f6d365 0%, #fda085 100%);
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+.btn-c-gradient-4:hover,
+.btn.btn-c-gradient-4:not(:disabled):not(.disabled):active {
+    background-image: -webkit-linear-gradient(330deg, #fda085 0%, #f6d365 100%);
+    background-image: -o-linear-gradient(330deg, #fda085 0%, #f6d365 100%);
+    background-image: linear-gradient(120deg, #fda085 0%, #f6d365 100%);
+}
+
+.btn-c-gradient-5 {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#f77062), to(#fe5196));
+    background-image: -webkit-linear-gradient(bottom, #f77062 0%, #fe5196 100%);
+    background-image: -o-linear-gradient(bottom, #f77062 0%, #fe5196 100%);
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+}
+
+.btn-c-gradient-5:hover,
+.btn.btn-c-gradient-5:not(:disabled):not(.disabled):active {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#fe5196), to(#f77062));
+    background-image: -webkit-linear-gradient(bottom, #fe5196 0%, #f77062 100%);
+    background-image: -o-linear-gradient(bottom, #fe5196 0%, #f77062 100%);
+    background-image: linear-gradient(to top, #fe5196 0%, #f77062 100%);
+}
+
+.btn-c-gradient-6 {
+    background-image: -webkit-gradient(linear, left top, right top, from(#816cfd), to(#7c5ac2));
+    background-image: -webkit-linear-gradient(left, #816cfd 0%, #7c5ac2 100%);
+    background-image: -o-linear-gradient(left, #816cfd 0%, #7c5ac2 100%);
+    background-image: linear-gradient(to right, #816cfd 0%, #7c5ac2 100%);
+}
+
+.btn-c-gradient-6:hover,
+.btn.btn-c-gradient-6:not(:disabled):not(.disabled):active {
+    background-image: -webkit-gradient(linear, left top, right top, from(#7c5ac2), to(#816cfd));
+    background-image: -webkit-linear-gradient(left, #7c5ac2 0%, #816cfd 100%);
+    background-image: -o-linear-gradient(left, #7c5ac2 0%, #816cfd 100%);
+    background-image: linear-gradient(to right, #7c5ac2 0%, #816cfd 100%);
+}

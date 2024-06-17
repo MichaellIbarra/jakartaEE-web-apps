@@ -1,0 +1,49 @@
+/* :: Progressbar CSS */
+
+.progress-vertical {
+    min-height: 250px;
+    height: 250px;
+    width: 10px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 20px;
+}
+
+.progress-vertical-bottom {
+    min-height: 250px;
+    height: 250px;
+    position: relative;
+    width: 10px;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 20px;
+}
+
+.progress-vertical-bottom .progress-bar {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+
+.animated-progressbar {
+    #myProgress {
+        width: 100%;
+        background-color: #e9ecef;
+        border-radius: 5px;
+    }
+
+    #myBar {
+        width: 10%;
+        height: 18px;
+        background-color: $primary;
+        text-align: center;
+        line-height: 18px;
+        color: $white-color;
+        border-radius: 5px;
+    }
+}
+
+.h-20{
+    height: 20px!important;
+}

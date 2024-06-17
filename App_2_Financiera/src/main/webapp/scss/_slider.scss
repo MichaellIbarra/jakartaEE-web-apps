@@ -1,0 +1,84 @@
+/* :: Slider CSS */
+
+.owl-carousel.full-width .owl-nav {
+    position: absolute;
+    top: 50%;
+    @include transform(translateX(-50%));
+    width: 100%;
+    margin-top: 0;
+    left: 0;
+}
+
+.owl-carousel.full-width .owl-nav .owl-prev {
+    left: 0;
+    right: auto;
+}
+
+.owl-carousel.full-width .owl-nav .owl-next {
+    right: 0;
+    left: auto;
+}
+
+.owl-dots {
+    margin-top: 10px;
+}
+
+.range-slider-area {
+    .demo__buttons {
+        @include display-flex(flex);
+        @include justify-content-between;
+        @include flex-wrap(wrap);
+
+        .button {
+            @include display-flex(flex);
+            @include align-items-center;
+            @include justify-content-center;
+            height: 50px;
+            padding: 0 1.5rem;
+            margin: 0 5px;
+            box-sizing: border-box;
+            border-radius: 3px;
+            @include box-shadow(0 2px 5px rgba(0, 0, 0, 0.4));
+            -webkit-transition: background-color 190ms linear;
+            -o-transition: background-color 190ms linear;
+            transition: background-color 190ms linear;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button.small {
+            height: 2.5rem;
+            padding: 0 .5rem;
+            margin: 0;
+        }
+    }
+}
+
+.irs--flat .irs-bar {
+    top: 25px;
+    height: 6px;
+    background-color: $danger-color;
+}
+
+.irs--flat .irs-line {
+    top: 25px;
+    height: 6px;
+    background-color: #e1e4e9;
+    border-radius: 4px;
+}
+
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single {
+    background-color: $danger-color;
+}
+
+.irs--flat .irs-handle > i:first-child {
+    background-color: $danger-color;
+}
+
+.irs--flat .irs-from::before,
+.irs--flat .irs-to::before,
+.irs--flat .irs-single::before {
+    border-top-color: $danger-color;
+}

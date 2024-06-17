@@ -1,0 +1,88 @@
+/* Crypto News Area CSS */
+
+.currency-marquee-area {
+    width: 100%;
+    background: #f1f5fa;
+    height: 60px;
+    line-height: 66px;
+    cursor: pointer;
+    z-index: 22;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+[class*="js-conveyor-"] ul li {
+    padding: 0 15px;
+    line-height: 35px;
+    font-size: 16px;
+}
+
+.line-legend {
+    padding-top: 25px;
+    padding-left: 18px;
+}
+
+.line-legend .chart-legend li {
+    display: inline-block;
+    font-size: 16px;
+    text-transform: capitalize;
+    position: relative;
+    color: #283a5e;
+    margin-left: 28px;
+}
+.line-legend .chart-legend li span {
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	background-color: #4e3a9d;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	position: absolute;
+	left: -22px;
+	top: 3px;
+}
+
+.line-legend .chart-legend li span.legend__two {
+	background-color: #ff7e00;
+}
+.chart-item .sec-heading .sec__list li .fa-check {
+	color: #fff;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	font-size: 13px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	margin-right: 10px;
+	-webkit-box-shadow: 0 0 40px rgba(82,85,90,0.2);
+	-moz-box-shadow: 0 0 40px rgba(82,85,90,0.2);
+	box-shadow: 0 0 40px rgba(82,85,90,0.2);
+}
+.chart-item .sec-heading .sec__list li .check-one {
+	background-color: #ff7e00;
+}
+.chart-item .sec-heading .sec__list li .check-two {
+	background-color: #4e3a9d;
+}
+.chart-item .sec-heading .sec__list li .check-three {
+	background-color: #283a5e;
+}
+.chart-item .sec-heading .sec__list li {
+	font-size: 16px;
+	color: #677286;
+	padding-bottom: 20px;
+	font-weight: 500;
+}
+.chart-item .sec-heading .sec__list li:last-child {
+	padding-bottom: 0;
+}
+.cryp-thumb{
+    width: 20px;
+}
+.overlay-icon{
+    font-size: 60px;
+    color: rgba(110, 0, 255, 0.20);
+}

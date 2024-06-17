@@ -1,0 +1,99 @@
+/* :: Timeline CSS */
+
+.timeline {
+    position: relative;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    border-right: 2px dashed $primary;
+
+    @media #{$breakpoint-xs} {
+        display: none;
+    }
+}
+
+.timeline-block:first-child {
+    margin-top: 0;
+}
+
+.timeline-block {
+    position: relative;
+    margin: 2em 0;
+}
+
+.timeline-step {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.timeline-content {
+    width: 38%;
+
+    @media #{$breakpoint-xs} {
+        width: 100%;
+    }
+}
+
+.timeline-content {
+    margin-left: 60px;
+    margin-right: 30px;
+    position: relative;
+    top: -6px;
+    border: 2px solid $primary;
+    padding: 15px;
+    border-radius: 2px;
+
+    @media #{$breakpoint-xs} {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.timeline-block::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.timeline-block:nth-child(2n) .timeline-content {
+    float: right;
+}
+
+.timeline-step {
+    position: absolute;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    left: 0;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid $primary;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    z-index: 1;
+
+    @media #{$breakpoint-xs} {
+        display: none;
+    }
+}
+
+.timeline-step {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}

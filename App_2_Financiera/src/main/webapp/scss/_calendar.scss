@@ -1,0 +1,188 @@
+/* :: Calendar CSS */
+
+.fc-unthemed .fc-content,
+.fc-unthemed .fc-divider,
+.fc-unthemed .fc-list-heading td,
+.fc-unthemed .fc-list-view,
+.fc-unthemed .fc-popover,
+.fc-unthemed .fc-row,
+.fc-unthemed tbody,
+.fc-unthemed td,
+.fc-unthemed th,
+.fc-unthemed thead {
+    border-color: $border-color;
+    padding: 4px;
+}
+
+.btn-group-colors > .btn {
+    cursor: pointer;
+}
+
+.btn-group-colors > .btn::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 28px;
+    color: #fff;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+    content: "\4e";
+    font-family: ElegantIcons;
+    font-size: 12px;
+    -webkit-transition: opacity .2s, -webkit-transform .2s;
+    transition: opacity .2s, -webkit-transform .2s;
+    transition: transform .2s, opacity .2s;
+    transition: transform .2s, opacity .2s, -webkit-transform .2s;
+}
+
+.btn-group-colors > .btn.active::before {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+.calendar-icon {
+    i {
+        line-height: 2.5;
+        color: $blue-color;
+    }
+}
+
+.calendar-title {
+    line-height: 1;
+}
+
+.fullcalendar-btn-prev.btn.btn-sm.btn-neutral,
+.fullcalendar-btn-next.btn.btn-sm.btn-neutral {
+    background-color: $primary;
+    color: $white-color;
+    font-size: 17px;
+    line-height: 0.9;
+    border-radius: 2px;
+    margin-right: 3px;
+}
+
+.btn.btn-sm.btn-neutral {
+    background-color: $primary;
+    color: $white-color;
+    line-height: 1.3;
+    border-radius: 2px;
+}
+
+.btn-group-colors > .btn {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin-right: .5rem;
+    margin-bottom: .25rem;
+    position: relative;
+}
+
+.fc-event {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    border: none;
+
+    .fc-title {
+        color: $white-color;
+    }
+}
+
+.fc-unthemed td.fc-today span {
+    font-weight: 700;
+    color: $heading-color;
+}
+
+.calendar--area {
+
+    .btn-group-sm > .btn,
+    .btn-sm {
+        padding: .8rem 1.25rem;
+    }
+
+
+    @media #{$breakpoint-xs} {
+
+        .fullcalendar-btn-prev.btn.btn-sm.btn-neutral,
+        .fullcalendar-btn-next.btn.btn-sm.btn-neutral {
+            margin-bottom: 10px;
+        }
+    }
+
+    .btn.btn-sm.btn-neutral {
+        margin-bottom: 10px;
+    }
+}
+
+.mini-cal {
+    background: $white-color;
+}
+
+#calTitle button {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+}
+
+#calTitle button {
+    line-height: 26px;
+}
+
+#calTbody .a-date {
+    color: $heading-color;
+    font-weight: 500;
+}
+
+#calTbody .a-date > span {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+#calThead > div {
+    color: $heading-color;
+    font-weight: 500;
+}
+
+#monthYear {
+    color: $heading-color;
+    font-weight: 600;
+}
+
+#calTitle button {
+    background: $primary;
+}
+
+#calTitle button:hover {
+    background: $primary;
+}
+
+#calTitle button svg {
+    width: 25px;
+    height: 25px;
+}
+
+#calTbody .a-date.current {
+    border-color: $primary;
+    background-color: $primary;
+    border-radius: 2px;
+}
+
+.a-date.current span {
+    color: #fff;
+}
+
+#calTbody .a-date:active,
+#calTbody .a-date:focus {
+    background-color: $primary;
+    border-radius: 2px;
+    color: #fff;
+}
+#calTbody .a-date {
+	padding: 9px;
+}

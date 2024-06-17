@@ -1,0 +1,214 @@
+/* :: Chart CSS */
+
+#simplecolumnchartdiv,
+#columnlinemixchartdiv,
+#clusteredbarchartdiv,
+#cylinderchartdiv {
+    width: 100%;
+    height: 500px;
+    font-size: 11px;
+}
+
+#clusteredbarchartdiv .amcharts-chart-div a {
+    color: $white-color !important;
+    font-size: 11px !important;
+    opacity: 1 !important;
+    top: 40px !important;
+}
+
+#valueaxischartdiv,
+#changingcolorchartdiv,
+#zoomablechartdiv {
+    width: 100%;
+    height: 500px;
+    font-size: 11px;
+}
+
+#smoothchartdiv,
+#differentcolorchartdiv {
+    width: 100%;
+    height: 400px;
+    font-size: 11px;
+}
+
+#polarchartdiv,
+#radarchartdiv,
+#polarscatterchartdiv,
+#gaugechartdiv {
+    width: 100%;
+    height: 400px;
+    font-size: 11px;
+}
+
+.widget-chart-js {
+    height: 300px;
+}
+
+#chartdiv {
+    width: 100%;
+    height: 300px;
+}
+
+.chartDiv-2 {
+    width: 100%;
+    height: 450px;
+}
+
+#chartdiv-donut {
+    width: 100%;
+    height: 300px;
+}
+
+#lineChart2 {
+    width: 100%;
+}
+
+#Earnings-chart {
+    height: 330px;
+}
+
+.amcharts-zoom-out-label {
+    opacity: 0;
+}
+
+image.amcharts-zoom-out-image {
+    opacity: 0;
+}
+
+#world-low {
+    height: 400px;
+}
+
+.highchart-pie1 {
+    height: 300px;
+    width: 100%;
+}
+
+#chart-highchart-bar1 {
+    height: 500px;
+    width: 100%;
+}
+
+.chart-sale {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.amcharts-main-div a {
+    opacity: 0 !important;
+}
+
+.Stackchart {
+    height: 300px;
+}
+
+.lineAreaDashboard {
+    height: 350px;
+}
+
+.ChartShadow.BarChart {
+    height: 250px;
+}
+
+.ChartShadow {
+    height: 350px;
+}
+
+.WidgetlineChart {
+    height: 350px;
+}
+
+.ChartShadow.BarChart.barChart1 {
+    height: 250px;
+}
+
+.chartSummary {
+    height: 300px;
+}
+
+.bar-chart2 {
+    height: 350px;
+}
+
+.device-chart {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+
+    @media #{$breakpoint-xs} {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+.bar-chart3 {
+    height: 300px;
+}
+
+.world-low {
+    height: 300px;
+}
+
+.Stackchart {
+    height: 250px;
+}
+
+.chartSummary-area {
+    span {
+        font-size: 12px;
+    }
+}
+
+.chartPageVisit {
+    height: 320px;
+}
+
+.page-visitors-chart-area {
+    span {
+        font-size: 12px;
+    }
+}
+
+.flot-chart-content {
+    width: 100%;
+    height: 100%;
+}
+
+.flot-chart {
+    width: 100%;
+    position: relative;
+    max-width: none;
+    height: 400px;
+}
+
+#lineChartArea,
+#lineScattered,
+#usingEvents,
+#bipolar,
+#smileAnimation,
+#horizontalBar,
+#peakCircles,
+#pieChart,
+#overlapBarMobile,
+#extreamResponsive,
+#gaugeChart,
+#lineInterpolation,
+#multiLineLabels,
+#seriesOverrides,
+#tackedBar,
+#pathAnimation,
+#labelPlacement,
+#barChart,
+#pieChartLabels,
+#distributedSeries,
+#donutFill,
+#gaugeChartFill {
+    height: 300px;
+    width: 100%;
+}
+
+#line-chart-example {
+    height: 320px;
+    width: 100%;
+}

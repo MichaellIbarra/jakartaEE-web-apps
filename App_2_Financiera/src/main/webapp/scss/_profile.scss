@@ -1,0 +1,57 @@
+/* :: Profile CSS */
+
+.user-friends img {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.thumb {
+    position: relative;
+    z-index: 1;
+}
+
+.profile-heading-thumb {
+    border: 5px solid $green-color;
+}
+
+.text {
+    h4 {
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+}
+
+.widget-download-file .download-file-icon img {
+    max-height: 20px;
+}
+
+.widget-download-file .download-file-icon {
+    width: 40px;
+    height: 40px;
+    background-color: $primary;
+    border-radius: 50%;
+    text-align: center;
+    padding: 7px 0;
+}
+
+.profile-friend-thumb {
+    width: 60px;
+    display: inline-block;
+    float: left;
+    padding: 10px 5px;
+    
+    img{
+        border-radius: 50%;
+    }
+}
+.profile--tumb {
+	height: 200px;
+	width: 200px;
+	margin: auto;
+    img{
+        border-radius: 50%;
+    }
+}

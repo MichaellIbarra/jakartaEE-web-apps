@@ -1,0 +1,54 @@
+/* :: Crypto CSS Area */
+
+.single-solutin-slider {
+    .thumb-icon {
+        width: 60px;
+        height: 60px;
+        display: block;
+    }
+}
+
+.currency-exchange {
+    .form-control {
+        border-color: transparent;
+    }
+
+    .custom-select {
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .custom-select:focus {
+        border-color: transparent;
+        box-shadow: none;
+    }
+}
+
+.cry-chart-area {
+    .crypto-report-history {
+        ul {
+            li {
+                a {
+                    font-size: 12px;
+                    color: $heading-color;
+                    font-weight: 600;
+                    border: 1px solid $border-color;
+                    margin-right: 5px;
+                    padding: 3px 10px;
+                    @include transition-duration(500ms);
+
+                    &:hover {
+                        background-color: $primary;
+                        color: $white-color;
+                        border-color: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+    .apexcharts-toolbar {
+        display: none;
+    }
+}

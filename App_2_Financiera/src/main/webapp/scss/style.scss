@@ -1,0 +1,223 @@
+/* -------------------------------------
+[Master Stylesheet]
+
+Template Name: Xvito - Responsive Bootstrap Admin Template
+Version: v1.0.0
+Created: Nov 25, 2019
+Last Updated: July 24, 2020
+
+[Table of Contents]
+    
+    * Google Fonts
+    * Include Third Party CSS Library
+        + Bootstrap CSS
+        + Classynav CSS
+        + Owl Carousel CSS
+        + Animate CSS
+        + Nice Select CSS
+        + jQuery UI CSS
+    * Include Web Icon Fonts
+        + Themify Icons
+        + Font Awesome
+        + Pe 7 Stroke
+        + Elegant Icons
+        + Material Design Iconic Font
+        + Etline
+    * Template Mixins
+        + Flex
+        + Miscellaneous
+    * Template Responsive
+    * Template Variables
+    * Template Colors
+    * Core Styles
+        + Reboot CSS
+            + Reset Styles
+            + Typography
+            + Utilities
+        + Bootstraping CSS
+            + Header CSS
+            + Sidebar CSS
+            + Footer CSS
+
+    * Components
+            + Button
+            + Fill-button
+            + Gradients-button
+            + Icon-button
+            + Dragula
+            + Google-chart
+            + Chart
+            + Timeline
+            + Invoice
+            + Calendar
+            + Slider
+            + Gallery
+            + Chat
+            + Form-wizard
+            + Form
+            + Login
+            + Loader
+            + Todo-list
+            + Widgets
+            + Typography
+            + Contact
+            + Pricing-table
+            + Data-table
+            + Web-icons
+            + Card
+            + Cart
+            + Product
+            + Lock
+            + Index
+            + Nested-list
+            + Table
+            + Password
+            + Timeout
+            + Paginator
+            + Avatar
+            + Tooltip
+            + Register
+            + Project
+            + Task
+            + Tab
+            + Dashboard
+            + Progressbbar
+            + Picker
+            + Preloader
+            + Profile
+            + Switchers
+            + Breadcrumb
+            + Scrool
+            + Editor
+            + Setting
+            + Alert
+            + Analytic
+            + CrypNews
+            + Crypto
+            + Crm
+            + Job
+            + Ecommerce
+
+    * Email
+        + Inbox
+    * General Pages
+        + Coming Soon
+        + 404
+    * Sidebar Light CSS
+    * Dark CSS
+    * Sidebar Background Image CSS
+    * Sidebar Gradient CSS
+------------------------------------- */
+
+/* -------------------------------------
+# [font-family]
+'Overpass', sans-serif;
+------------------------------------- */
+
+/* Import Fonts & CSS Files */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;600&display=swap');
+
+@import url(css/bootstrap.min.css);
+@import url(css/owl.carousel.min.css);
+@import url(css/animate.css);
+@import url(css/nice-select.css);
+@import url(css/jquery-ui.min.css);
+
+// Web Icons
+@import url(css/default-assets/themify-icons.css);
+@import url(css/typicons.min.css);
+@import url(css/font-awesome.min.css);
+@import url(css/pe-icon-7-stroke.min.css);
+@import url(css/style.css);
+@import url(css/material-design-iconic-font.min.css);
+@import url(etline/style.css);
+
+// Template Mixins, Variables & Responsive
+@import "flex";
+@import "miscellaneous";
+@import "responsive";
+@import "variables";
+@import "colors";
+
+// Core Styles
+@import "reboot";
+@import "bootstraping";
+
+// Components
+@import "button";
+@import "fill-button";
+@import "gradients-button";
+@import "icon-button";
+@import "dragula";
+@import "google-chart";
+@import "chart";
+@import "timeline";
+@import "invoice";
+@import "calendar";
+@import "slider";
+@import "gallery";
+@import "chat";
+@import "form-wizard";
+@import "form";
+@import "login";
+@import "todo-list";
+@import "widgets";
+@import "typography";
+@import "contact";
+@import "pricing-table";
+@import "data-table";
+@import "web-icons";
+@import "card";
+@import "cart";
+@import "product";
+@import "lock";
+@import "index";
+@import "nested-list";
+@import "table";
+@import "password";
+@import "timeout";
+@import "paginator";
+@import "avatar";
+@import "tooltip";
+@import "register";
+@import "project";
+@import "task";
+@import "tab";
+@import "dashboard";
+@import "progressbbar";
+@import "picker";
+@import "preloader";
+@import "profile";
+@import "ribbon";
+@import "breadcrumb";
+@import "scrool";
+@import "editor";
+@import "setting";
+@import "alert";
+@import "analytic";
+@import "crypNews";
+@import "crypto";
+@import "crm";
+@import "job";
+@import "ecommerce";
+@import "clint";
+
+// Email
+@import "inbox";
+@import "email-view";
+
+// Landing Pages
+@import "coming-soon";
+@import "404";
+
+// Sidebar Dark
+@import "sidebar-dark";
+
+// Dark Template
+@import "dark";
+
+// Sidebar BG Image
+@import "sidebar-bg-img";
+
+// Sidebar Gradient
+@import "sidebar-gradient";

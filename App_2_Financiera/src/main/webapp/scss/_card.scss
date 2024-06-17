@@ -1,0 +1,109 @@
+/* :: Card CSS */
+
+.single-card-area {
+    border-radius: 10px;
+
+    .card-thumb {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card-text {
+        padding: 1rem;
+
+        h4 {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+.single-card-two-area {
+    position: relative;
+    z-index: 1;
+    height: 300px;
+    border-radius: 10px;
+
+    &::after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        right: 0;
+        top: 0;
+        content: "";
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+        border-radius: 10px;
+    }
+
+    .single-card-content {
+        .single-card-two-text {
+            h4 {
+                color: $white-color;
+            }
+
+            p {
+                font-size: 14px;
+                color: $white-color;
+            }
+        }
+    }
+}
+
+.single-card-three-area {
+    padding: 30px;
+    text-align: center;
+    background-color: $white-color;
+
+    .icon {
+        height: 70px;
+        width: 70px;
+        line-height: 72px;
+        font-size: 26px;
+        margin: auto;
+        @include transition-duration(500ms);
+        border-radius: 50%;
+        background-color: $background-color;
+    }
+
+    h4 {
+        margin-top: 15px;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    &:hover {
+        .icon {
+            background-color: $primary-color;
+            color: $white-color;
+        }
+    }
+}
+
+.card- {
+    background: $white-color;
+}
+
+.border-info- {
+    border: #17a2b8 !important;
+}
+
+.border-danger- {
+    border: 1px solid #f1536e !important;
+}
+
+.border-primary- {
+    border: 1px solid #2466fd !important;
+}
+
+.medium-card-area {
+    .icon-thumb {
+        width: 60px;
+        height: 60px;
+        margin: auto;
+
+        img {
+            border-radius: 5px;
+        }
+    }
+}

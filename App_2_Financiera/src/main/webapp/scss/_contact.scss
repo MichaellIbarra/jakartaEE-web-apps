@@ -1,0 +1,195 @@
+/* :: Contact CSS */
+
+.member-content-area {
+    .member-contact-content {
+        .contact-thumb {
+            @include flex(0 0 50px);
+            max-width: 50px;
+            width: 50px;
+            margin-right: 15px;
+
+            img {
+                border-radius: 50%;
+            }
+        }
+
+        .member-contact-info {
+            @include flex(0 0 80%);
+            max-width: 80%;
+            width: 80%;
+        }
+    }
+
+    h5 {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .nav {
+        @include align-items-center;
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .nav-item {
+
+            .img-icon {
+                height: 30px;
+                width: 30px;
+                background-color: $primary;
+                text-align: center;
+                line-height: 30px;
+                color: $white-color;
+                border-radius: 50%;
+                margin-right: 10px;
+                font-size: 12px;
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.contact-content-area {
+    .address-contact-area {
+        p {
+            margin-bottom: 10px;
+            color: $dark-text-2;
+            font-size: 16px;
+
+            i {
+                display: inline-block;
+                width: 30px;
+            }
+        }
+
+        a {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: $dark-text-2;
+
+            i {
+                width: 30px;
+                display: inline-block;
+            }
+        }
+    }
+
+    .contact-add-icon {
+        a {
+            font-size: 14px;
+            margin-right: 10px;
+        }
+    }
+}
+
+.address-content- {
+    @include display-flex(flex);
+    @include align-items-center;
+
+    .contact--icon {
+        margin-right: 15px;
+
+        i {
+            font-size: 22px;
+        }
+    }
+}
+
+.contact-add-icon {
+    &.two {
+        a {
+            font-size: 12px;
+            height: 35px;
+            width: 35px;
+            border: 2px solid $border-color;
+            display: inline-block;
+            line-height: 34px;
+            text-align: center;
+            border-radius: 50%;
+            color: $blue-color;
+            @include transition-duration(500ms);
+
+            &:hover {
+                background-color: $blue-color;
+                color: $white-color;
+                border-color: $blue-color;
+            }
+        }
+    }
+}
+
+.form-control {
+    &.contact {
+        border: none;
+        background-color: $background-color;
+        font-size: 12px;
+        padding: 20px;
+    }
+}
+
+.map-container {
+    &.contact-page {
+        width: 100%;
+        height: 420px;
+
+        @media #{$breakpoint-xs} {
+            height: 270px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    }
+}
+
+.single-contact-area {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.form-control.contact {
+    background-color: #fff;
+    border-radius: 10px 0 0 35px;
+}
+
+.contact-btn {
+    height: 40px;
+    background-color: $green-color;
+    padding: 0 15px;
+    color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 0 35px 4px 0;
+    @include transition-duration(500ms);
+
+    &:hover {
+        background-color: #5ab2a2;
+    }
+}
+
+.warning-title {
+    position: absolute;
+    z-index: 22;
+    top: -120px;
+    right: 30px;
+    @include transition-duration(600ms);
+
+    p {
+        margin-bottom: 0;
+        color: $white-color;
+    }
+}
+
+.single-contact-area:hover {
+    .warning-title {
+        top: 30px;
+    }
+}

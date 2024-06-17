@@ -1,0 +1,499 @@
+/* :: Form CSS */
+
+.form-group {
+    label {
+        font-size: 0.874rem;
+    }
+}
+
+.form-control {
+    border-color: #dbdbdb;
+
+    &:focus {
+        border-color: $primary-color;
+        box-shadow: none;
+    }
+}
+
+.input-group,
+.asColorPicker-wrap {
+    position: relative;
+    @include display-flex(flex);
+    @include flex-wrap(wrap);
+    @include align-items-stretch;
+    width: 100%;
+}
+
+.form-group {
+    .file-upload-default {
+        display: none;
+    }
+}
+
+.success-box {
+    margin: 50px 0;
+    padding: 10px 10px;
+    border: 1px solid #e1eaea;
+    background: $background-color;
+
+    div {
+        vertical-align: top;
+        display: inline-block;
+        color: $gray-color;
+    }
+
+    img {
+        margin-right: 10px;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+#example-vertical-wizard h3 {
+    font-size: 20px;
+}
+
+#demo {
+    z-index: 99999999999 !important;
+    position: relative;
+}
+
+.input-form-area {
+    .nice-select {
+        width: 80%;
+        border-radius: 0;
+        height: auto;
+    }
+
+    .form-control {
+        height: auto;
+    }
+}
+
+.input-group-text {
+    background-color: #fff;
+}
+
+.typeahead-form-area {
+    .twitter-typeahead {
+        width: 100%;
+    }
+
+    .typeahead.form-control.tt-input {
+        font-size: 14px;
+    }
+
+    .tt-menu {
+        background-color: #f8f8f8;
+        padding: 15px;
+        @include box-shadow(0 1px 20px 0 rgba(69, 90, 100, 0.30));
+
+        .tt-suggestion.tt-selectable {
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: $heading-color;
+            font-weight: 300;
+            cursor: pointer;
+        }
+    }
+}
+
+.layout-form-area {
+    .nice-select {
+        height: calc(2.25rem + 2px);
+        line-height: calc(2.25rem + 2px);
+    }
+}
+
+.form-check-input {
+    margin-left: 0;
+}
+
+div.tagsinput span.tag {
+    border: 1px solid $primary;
+    padding: 5px 10px;
+    background: $primary;
+    color: $white-color;
+    font-family: inherit;
+    font-size: 13px;
+}
+
+div.tagsinput {
+    padding: 15px 15px 10px;
+    border-color: #e1eaea;
+}
+
+div.tagsinput span.tag {
+    color: $white-color;
+    font-size: 13px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: $text-color;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.select2-container .select2-selection--single {
+    height: 35px;
+    padding: 3px 10px;
+}
+
+.select2-container--default .select2-selection--single {
+    border: 1px solid #e1eaea;
+    border-radius: 3px;
+}
+
+.select2-container--default .select2-selection--multiple {
+    border: 1px solid #e1eaea;
+    border-radius: 3px;
+}
+
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-dropdown,
+.select2-container--default .select2-selection--multiple {
+    border-color: #e1eaea;
+}
+
+.form-control,
+select,
+.email-compose-fields .select2-container--default .select2-selection--multiple,
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--single .select2-search__field,
+.typeahead,
+.tt-query,
+.tt-hint {
+    border: 1px solid #e1eaea;
+    font-weight: 400;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: $primary;
+    border: 1px solid $primary;
+    color: #fff;
+    font-size: 14px;
+}
+
+.datepicker table tr td span.focused,
+.datepicker table tr td span:hover,
+.datepicker table tr td.day.focused,
+.datepicker table tr td.day:hover {
+    background: $primary;
+    color: #fff;
+}
+
+.bootstrap-touchspin .input-group-btn-vertical {
+    z-index: 5;
+}
+
+
+.checkbox {
+    padding: 10px 0;
+    min-height: auto;
+    position: relative;
+    margin-right: 5px;
+}
+
+.checkbox input[type="checkbox"] {
+    margin: 0;
+    display: none;
+    width: 22px;
+}
+
+.checkbox input[type="checkbox"] + .cr {
+    padding-left: 0;
+}
+
+.checkbox .cr {
+    cursor: pointer;
+}
+
+.checkbox input[type="checkbox"]:checked + .cr::before {
+    background: $primary;
+    border-color: $primary;
+    color: #fff;
+}
+
+.checkbox input[type="checkbox"] + .cr::before {
+    content: "\4e";
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    margin-right: 10px;
+    border: 2px solid $primary;
+    border-radius: 3px;
+    font-size: 15px;
+    font-family: ElegantIcons;
+    font-weight: 400;
+    line-height: 19px;
+    vertical-align: bottom;
+    text-align: center;
+    background: #fff;
+    color: transparent;
+    cursor: pointer;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.checkbox.checkbox-primary input[type="checkbox"]:checked + .cr::before {
+    background: #04a9f5;
+    border-color: #04a9f5;
+    color: #fff;
+}
+
+.checkbox.checkbox-danger input[type="checkbox"]:checked + .cr::before {
+    background: $danger-color;
+    border-color: $danger-color;
+    color: #fff;
+}
+
+.stacked-form-area {
+
+    input[type=text],
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #e1eaea;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+}
+
+.contact-form-area {
+
+    /* Style inputs with type="text", select elements and textareas */
+    input[type=text],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #e1eaea;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical
+    }
+}
+
+.new-checkbox {
+
+    /* The switch - the box around the slider */
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+
+    /* Hide default HTML checkbox */
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    /* The slider */
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: $white-color;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked + .slider {
+        background-color: $primary;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px $primary;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+}
+
+.animated-search-box {
+    input[type=text] {
+        width: 130px;
+        border: 2px solid #e1eaea;
+        padding: 10px 15px;
+        border-radius: 5px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }
+
+
+    /* When the input field gets focus, change its width to 100% */
+    input[type=text]:focus {
+        width: 100%;
+    }
+}
+
+.fullscreen-search-box {
+
+    /* The overlay effect with black background */
+    .overlay {
+        height: 100%;
+        width: 100%;
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    /* The content */
+    .overlay-content {
+        position: relative;
+        top: 46%;
+        width: 80%;
+        text-align: center;
+        margin-top: 30px;
+        margin: auto;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    /* Close button */
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+        cursor: pointer;
+        color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .overlay .closebtn:hover {
+        color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    /* Style the search field */
+    .overlay input[type=text] {
+        padding: 15px;
+        font-size: 17px;
+        border: none;
+        float: left;
+        width: 80%;
+        background: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .overlay input[type=text]:hover {
+        background: #f1f1f1;
+    }
+
+    /* Style the submit button */
+    .overlay button {
+        float: left;
+        width: 20%;
+        padding: 15px;
+        background: $primary;
+        font-size: 16px;
+        color: $white-color;
+        border: none;
+        cursor: pointer;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .overlay button:hover {
+        background-color: $info-color;
+    }
+}
+
+.input-group-text {
+    background-color: #f3f6f7;
+    border: 1px solid #e1eaea;
+}
+
+.form-group {
+    label {
+        color: $heading-color;
+    }
+}
+
+.custom-input-file {
+    width: .1px;
+    height: .1px;
+    opacity: 0;
+    outline: none;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.custom-input-file + label {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    padding: .625rem 1.25rem;
+    border: 1px solid #e0e6ed;
+    border-radius: .25rem;
+    color: #8492a6;
+    background-color: #fff;
+    outline: none;
+    margin: 0;
+}
+
+.custom-input-file + label i {
+    font-size: 20px;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -.25em;
+    margin-right: .5em;
+}
+
+.custom-input-file--2 + label {
+    color: #fff;
+    border-color: #6e00ff;
+    background: #6e00ff;
+}
+
+.input-group-append .btn,
+.input-group-prepend .btn {
+    height: 40px;
+}

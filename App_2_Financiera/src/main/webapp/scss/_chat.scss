@@ -1,0 +1,194 @@
+/* :: Chat CSS */
+
+.chat.chat-app {
+    border: 1px solid #edf2f9;
+    padding: 0px;
+    margin: 0px;
+}
+
+.chat.chat-app .chat-list {
+    border-right: 1px solid #edf2f9;
+    background-color: #fff;
+}
+
+.chat-clint {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 40px;
+    flex: 0 0 40px;
+    width: 40px;
+    max-width: 40px;
+    border-radius: 50%;
+
+}
+
+.chat-active {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        content: "";
+        z-index: 33;
+        background-color: #ff9430;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        top: 0;
+        right: 0;
+    }
+}
+
+.chat.chat-app .chat-list .chat-user-tool {
+    padding: 0px 25px;
+    height: 50px;
+    border-bottom: 1px solid #edf2f9;
+}
+
+.chat.chat-app .chat-list .chat-user-tool .search-icon {
+    color: rgba(114, 132, 154, 0.4);
+}
+
+.chat.chat-app .chat-list .chat-user-tool > input {
+    border: 0px;
+    color: #2a2a2a;
+    line-height: 50px;
+    background-color: transparent;
+    font-size: 15px;
+    width: 70%;
+}
+
+.chat.chat-app .chat-list .chat-user-list .chat-list-item {
+    padding: 15px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: $white-color;
+    }
+}
+
+.chat.chat-app .chat-content .conversation {
+    height: 100%;
+}
+
+.chat .conversation .conversation-wrapper {
+    position: relative;
+    height: 100%;
+}
+
+.chat .conversation .conversation-wrapper .conversation-header {
+    position: relative;
+    height: 75px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.94);
+}
+
+
+.chat .conversation .conversation-wrapper .conversation-body {
+    padding: 15px 25px;
+    position: relative;
+    width: 100%;
+}
+
+.message-desc {
+    margin-bottom: 20px;
+}
+
+.chat .conversation .conversation-wrapper .conversation-body .chat-text {
+    font-size: 14px;
+    color: $white-color;
+    padding: 6px 12px;
+    border-radius: 3px;
+}
+
+.chat.chat-app .chat-content .conversation-footer {
+    position: absolute;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 0px;
+}
+
+.chat .conversation .conversation-wrapper .conversation-footer {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid $border-color;
+    height: 100%;
+    margin-top: 15px;
+    padding: 0 15px;
+}
+
+.chat-user-tool {
+    border: 1px solid $border-color;
+    margin-bottom: 15px;
+}
+
+.chat.chat-app .chat-content .conversation-footer .chat-input {
+    border: 0px;
+    line-height: 75px;
+    outline: 0;
+    width: 100%;
+    max-width: 400px;
+
+    @media #{$breakpoint-xs} {
+        max-width: 80px;
+    }
+
+    @media #{$breakpoint-sm} {
+        max-width: 200px;
+    }
+
+    @media #{$breakpoint-lg} {
+        max-width: 200px;
+    }
+
+    @media #{$breakpoint-md} {
+        max-width: 150px;
+    }
+}
+
+.bg-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    padding: 0px;
+    background-color: #00c9a7;
+    color: #fff;
+    display: inline-block;
+}
+
+.chat-body-thumb {
+    width: 300px;
+    height: auto;
+}
+
+.chat-body-gray {
+    background-color: #fff
+}
+
+.chat-blue-bg {
+    background-color: rgba(63, 135, 245, 0.15);
+}
+
+.text-blue-chat {
+    color: $blue-color;
+}
+
+.chat-box-img {
+    @include flex(0 0 40px);
+    width: 40px;
+    max-width: 40px;
+
+    border-color: $primary;
+    border-radius: 50%;
+}

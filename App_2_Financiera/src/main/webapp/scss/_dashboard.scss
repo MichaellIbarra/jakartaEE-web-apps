@@ -1,0 +1,270 @@
+/* :: Dashboard CSS */
+
+.dashboard-area {
+    .breadcrumb {
+        background-color: transparent;
+        padding: 0;
+        margin-bottom: 9px;
+
+        a {
+            color: $heading-color;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .breadcrumb-item.active {
+            color: $primary;
+            font-weight: 600;
+            font-size: 14px;
+        }
+    }
+
+    .project-table .project-thumb {
+        width: 40px;
+        min-width: 40px;
+        border-radius: 50%;
+    }
+
+    .project-table tr td h6 {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .project-table tr td span {
+        font-size: 12px;
+    }
+
+    .project-table tr td h5 {
+        font-size: 14px;
+        margin-bottom: 0;
+        font-weight: 700;
+    }
+
+    tr td {
+        font-weight: 600;
+        border-top-style: dashed;
+    }
+
+    .table .thead-light th {
+        border-top-style: dashed;
+    }
+
+    .table td,
+    .table th {
+        vertical-align: middle;
+    }
+
+    .table thead th {
+        border-top-style: dashed;
+        border-bottom-style: dashed;
+    }
+}
+
+.badge-outline-warning {
+    color: #fda006;
+    border: 1px solid #fda006;
+}
+
+.badge-outline-success {
+    color: #26a69a;
+    border: 1px solid #26a69a;
+}
+
+.badge-outline-info {
+    color: #3da5f4;
+    border: 1px solid #3da5f4;
+}
+
+.crypto-news-thumb {
+    @include flex(0 0 100px);
+    width: 100px;
+    max-width: 100px;
+}
+
+
+.dashboard-tab-area {
+
+    .nav-pills > li > a,
+    .nav-tabs > li > a {
+        color: rgba(255, 255, 255, 0.95);
+    }
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show > .nav-link {
+        color: $heading-color;
+        background-color: $white-color;
+        padding: 5px 15px;
+        font-size: 14px;
+    }
+}
+
+.dashboard-tab-thumb {
+    @include flex(0 0 150px);
+    width: 150px;
+    max-width: 150px;
+
+    @media #{$breakpoint-xs} {
+        @include flex(0 0 100px);
+        width: 100px;
+        max-width: 100px;
+    }
+}
+
+.dashboard-active-timeline {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        content: "";
+        border-left: 2px solid $border-color;
+        top: 0;
+        left: 16px;
+        height: 100%;
+    }
+
+    li {
+        position: relative;
+        z-index: 1;
+
+        .timeline-icon {
+            @include flex(0 0 35px);
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            line-height: 35px;
+            border-radius: 50%;
+            color: $white-color;
+            font-size: 16px;
+            transition-duration: 500ms;
+        }
+
+        &:hover {
+            .timeline-icon {
+                border-radius: 2px;
+            }
+        }
+    }
+}
+
+.chat-application .chats .chat-body .chat-content {
+    text-align: right;
+    position: relative;
+    z-index: 1;
+    display: block;
+    float: right;
+    padding: 8px 15px;
+    margin: 0 20px 10px 0;
+    clear: both;
+    color: #fff;
+    background-color: #6967ce;
+    -webkit-box-shadow: 0 5px 12px 0 rgba(62, 57, 107, 0.36);
+    box-shadow: 0 5px 12px 0 rgba(62, 57, 107, 0.36);
+    border-radius: 7px;
+}
+
+.chat-application .chats .chat-body .chat-content::before {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: -10px;
+    width: 0;
+    height: 0;
+    content: '';
+    border: 5px solid transparent;
+    border-left-color: #6967ce;
+}
+
+.chat-application .chats .chat-left .chat-avatar {
+    float: left;
+}
+
+.chat-application .chat-avatar .avatar img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.chat-application .chats .chat-left .chat-body {
+    margin-right: 0;
+    margin-left: 30px;
+}
+
+.chat-application .chats .chat-body {
+    display: block;
+    margin: 10px 30px 0 0;
+    overflow: hidden;
+}
+
+.chat-application .chats .chat-left .chat-content {
+    text-align: left;
+    float: left;
+    margin: 0 0 15px 20px;
+    color: #6b6f80;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0 7px 12px 0 rgba(62, 57, 107, 0.16);
+    box-shadow: 0 7px 12px 0 rgba(62, 57, 107, 0.16);
+}
+
+.chat-application .chats .chat-left .chat-content::before {
+    right: auto;
+    left: -10px;
+    border-right-color: #FFFFFF;
+    border-left-color: transparent;
+}
+
+.chat-application .chats .chat-body .chat-content::before {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: -10px;
+    width: 0;
+    height: 0;
+    content: '';
+    border: 5px solid transparent;
+    border-left-color: #6967ce;
+}
+
+.chat-application .chats .chat-left .chat-content::before {
+    right: auto;
+    left: -10px;
+    border-right-color: #FFFFFF;
+    border-left-color: transparent;
+}
+
+.chat-avatar {
+    float: left;
+}
+
+.chat-application .chats .chat-left .chat-body {
+    margin-right: 0;
+    margin-left: 30px;
+}
+
+.chat-application .chats .chat-avatar {
+    float: right;
+}
+
+.chat-application .chats .chat-left .chat-content {
+    text-align: left;
+    color: $heading-color;
+}
+
+.chat-content {
+    p {
+        margin-bottom: 0;
+    }
+}
+
+
+.dashboard-area {
+    .apexcharts-zoom-icon,
+    .apexcharts-zoom-in-icon,
+    .apexcharts-zoom-out-icon,
+    .apexcharts-reset-zoom-icon,
+    .apexcharts-pan-icon,
+    .apexcharts-selection-icon,
+    .apexcharts-menu-icon,
+    .apexcharts-toolbar-custom-icon {
+        display: none;
+    }
+}

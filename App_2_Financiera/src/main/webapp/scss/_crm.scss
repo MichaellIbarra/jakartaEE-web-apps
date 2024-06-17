@@ -1,0 +1,199 @@
+/* :: CRM CSS Area */
+
+.action-item {
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    color: #8492a6;
+    background: transparent;
+    border: 0;
+    padding: .25rem;
+    -webkit-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s;
+}
+
+.bg-gradient-warning {
+    background: -o-linear-gradient(40deg, #ffab00, #fff800) !important;
+    background: linear-gradient(50deg, #ffab00, #fff800) !important;
+}
+
+.bg-gradient-primary {
+    background: -o-linear-gradient(40deg, #6e00ff, #b0f) !important;
+    background: linear-gradient(50deg, #6e00ff, #b0f) !important;
+}
+
+.bg-gradient-danger {
+    background: -o-linear-gradient(40deg, #ff5630, #ff9430) !important;
+    background: linear-gradient(50deg, #ff5630, #ff9430) !important;
+}
+
+.clint-icon {
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 16px;
+}
+
+.badge-soft-warning {
+    color: #ffab00;
+    background-color: #fec;
+}
+
+.single-conatct-area {
+    .conatct-thumb {
+        width: 150px;
+        height: 150px;
+        margin: auto;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 20px;
+        @include transition-duration(500ms);
+
+        &::after {
+            position: absolute;
+            content: "";
+            z-index: 33;
+            background-color: $primary;
+            height: 130px;
+            width: 10px;
+            border-radius: 2px 0 0 2px;
+            top: 10px;
+            right: 0;
+            @include transition-duration(600ms);
+        }
+
+        img {
+            border-radius: 5px;
+        }
+    }
+
+    .member-info {
+        h6 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 13px;
+        }
+    }
+
+    .contact-social-icon {
+        padding-bottom: 15px;
+        border-bottom: 1px solid $border-color;
+
+        a {
+            color: #8492a6;
+            font-size: 16px;
+            @include transition-duration(400ms);
+
+            &:hover {
+                color: $text-secondary;
+            }
+        }
+    }
+
+    .contact-footer {
+        padding: 15px 0;
+
+        a {
+            color: $heading-color;
+            font-weight: 400;
+            @include transition-duration(400ms);
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    &:hover {
+        .conatct-thumb {
+            @include transform(translateY(-20px));
+            img{
+                border-radius: 0 0 5px 5px;
+            }
+
+            &::after {
+                width: 100%;
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+.profile-social-icon {
+    a {
+        color: $primary;
+        font-size: 16px;
+        margin: 0 10px;
+        @include transition-duration(400ms);
+
+        &:hover {
+            color: $text-secondary;
+        }
+    }
+}
+
+.profile-crm-area {
+    .nav-tabs {
+        border-bottom: none;
+    }
+
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+        border-color: transparent;
+    }
+
+    .nav-tabs .nav-link.active {
+        background-color: $primary;
+        color: #fff;
+    }
+
+    .nav-tabs .nav-link {
+        height: 30px;
+        width: 80px;
+        padding: 0;
+        text-align: center;
+        line-height: 28px;
+        color: $heading-color;
+        border-radius: 2px;
+        font-size: 13px;
+    }
+
+    .nav-tabs .nav-link:focus,
+    .nav-tabs .nav-link:hover {
+        border-color: transparent;
+    }
+
+    .profile-row {
+        padding: 15px 0;
+        border-bottom: 1px solid $border-color;
+        margin-bottom: 5px;
+    }
+
+    .profile-cat {
+        color: $heading-color;
+        font-weight: 600;
+    }
+}
+
+.media-pill {
+    position: relative;
+    padding: 2px 1rem 2px 2px;
+    border-radius: 50rem;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.avatar.rounded-circle img {
+    border-radius: 50%;
+}
+
+.crm-chart {
+    .apexcharts-toolbar {
+        display: none;
+    }
+}

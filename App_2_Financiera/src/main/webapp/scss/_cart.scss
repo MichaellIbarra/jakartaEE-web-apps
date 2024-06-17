@@ -1,0 +1,87 @@
+/* :: Cart CSS */
+
+.cart-area {
+    .table .thead-light th {
+        color: #6c757d;
+        background-color: #f1f3fa;
+        border-color: #e3eaef;
+    }
+
+    .select2-container .select2-selection--single {
+        border: 1px solid #dee2e6;
+        height: calc(2.2125rem + 2px);
+        background-color: #fff;
+        outline: 0;
+    }
+
+    .select2-container {
+        width: 100% !important;
+    }
+
+    .select2-container {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        display: inline-block;
+        margin: 0;
+        position: relative;
+        vertical-align: middle;
+    }
+
+    .select2-container .select2-selection--single {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        cursor: pointer;
+        display: block;
+        height: 28px;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .select2-container--default .select2-selection--single {
+        background-color: #fff;
+        border: 1px solid #aaa;
+        border-radius: 4px;
+    }
+
+    .select2-container .select2-selection--single .select2-selection__rendered {
+        line-height: 36px;
+        padding-left: 12px;
+        color: #6c757d;
+    }
+
+    .select2-container .select2-selection--single .select2-selection__arrow {
+        height: 34px;
+        width: 34px;
+        right: 3px;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__arrow {
+        height: 26px;
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        width: 20px;
+    }
+
+    .select2-container .select2-selection--single .select2-selection__arrow b {
+        border-color: #98a6ad transparent transparent transparent;
+        border-width: 6px 6px 0 6px;
+    }
+
+    .form-control {
+        display: inline-block;
+
+    }
+}
+
+.check-out-area {
+    .form-control {
+        font-size: 13px;
+    }
+
+    .input-group-text {
+        font-size: 13px;
+    }
+}

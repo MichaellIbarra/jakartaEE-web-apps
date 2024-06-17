@@ -1,0 +1,224 @@
+/* :: Gallery CSS */
+
+.gallery--single-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+
+    .gallery--image {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 3px;
+
+        img {
+            width: 100%;
+            @include transition-duration(1500ms);
+            border-radius: 3px;
+        }
+    }
+
+    .gallery_service_text {
+        padding: 25px 30px 30px;
+
+        h6 {
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.single-gallery--item {
+    position: relative;
+    z-index: 1;
+
+    .gallery-thumb {
+        position: relative;
+        z-index: 1;
+        padding: 15px;
+
+        img {
+            border-radius: 10px;
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        right: 1rem;
+        bottom: -1rem;
+        left: 1.5rem;
+        top: 1.5rem;
+        background: -o-linear-gradient(40deg, #6e00ff, #b0f) !important;
+        background: linear-gradient(50deg, #6e00ff, #b0f) !important;
+        border-radius: 10px;
+        z-index: -1;
+        -webkit-transition: 0.3s ease;
+        transition: 0.3s ease;
+    }
+
+    &:hover::after,
+    &:focus::after,
+    &:active::after {
+        left: -0.5rem;
+        right: -0.5rem;
+        top: -0.5rem;
+        bottom: -0.5rem;
+    }
+
+    .gallery-text-area {
+        margin-left: 3.5rem;
+
+        .gallery-icon {
+            a {
+                font-size: 18px;
+                color: $white-color;
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+.single_gallery_item {
+    overflow: hidden;
+    margin-bottom: 30px;
+
+    .gallery-content {
+        position: relative;
+        z-index: 1;
+        @include transition-duration(500ms);
+        border: 5px solid $border-color;
+
+        .gallery-hover-overlay {
+            position: absolute;
+            z-index: 22;
+            bottom: -200px;
+            left: 0;
+            background-color: $primary;
+            opacity: 0;
+            height: 100%;
+            width: 100%;
+            @include transition-duration(500ms);
+
+            .port-more-view {
+                position: absolute;
+                z-index: 99;
+                bottom: 30px;
+                left: 30px;
+
+                .port-icon {
+                    a {
+                        font-size: 18px;
+                        color: $white-color;
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    &:hover {
+        .gallery-content {
+            border-color: transparent;
+
+            img {
+                width: 100%;
+            }
+
+            .gallery-hover-overlay {
+                opacity: 0.95;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+.our-gallery-area {
+    .portfolio-menu button {
+        line-height: 1;
+        background-color: transparent;
+        font-size: 15px;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 10px 25px;
+        border-radius: 30px;
+        margin: 5px;
+        color: $primary;
+        border: 1px solid #fff;
+        @include transition-duration(400ms);
+    }
+
+    .portfolio-menu button.active {
+        border-color: $primary;
+    }
+
+    .single_gallery_item {
+        margin-bottom: 50px;
+        overflow: hidden;
+
+        .gallery-content {
+            position: relative;
+            z-index: 1;
+            @include transition-duration(500ms);
+
+            .gallery-hover-overlay {
+                position: absolute;
+                z-index: 22;
+                top: -300px;
+                left: 0;
+                background-color: $danger-color;
+                opacity: 0;
+                height: 100%;
+                width: 100%;
+                @include transition-duration(500ms);
+
+                .port-more-view {
+                    position: absolute;
+                    z-index: 99;
+                    top: 50%;
+                    left: 50%;
+                    @include transform(translate(-50%, -50%));
+
+                    .portfo-icon {
+                        a {
+                            font-size: 24px;
+                            color: $white-color;
+                            margin: 0 5px;
+                            border-radius: 50%;
+                            display: inline-block;
+                            text-align: center;
+                            line-height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            .gallery-content {
+                .gallery-hover-overlay {
+                    opacity: 0.95;
+                    top: 0;
+                }
+            }
+        }
+
+    }
+
+    .port-text {
+        text-align: center;
+        margin-top: 20px;
+
+        h4 {
+            font-size: 18px;
+        }
+
+        h6 {
+            font-size: 14px;
+            margin-bottom: 0;
+            font-weight: 400;
+            color: $heading-color;
+        }
+    }
+}

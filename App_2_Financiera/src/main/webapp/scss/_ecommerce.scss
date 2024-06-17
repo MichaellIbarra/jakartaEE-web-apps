@@ -1,0 +1,32 @@
+/* :: Ecommerce CSS Area */
+
+.ecommerce-chart {
+
+    .apexcharts-zoom-icon,
+    .apexcharts-zoom-in-icon,
+    .apexcharts-zoom-out-icon,
+    .apexcharts-reset-zoom-icon,
+    .apexcharts-pan-icon,
+    .apexcharts-selection-icon,
+    .apexcharts-menu-icon,
+    .apexcharts-toolbar-custom-icon {
+        display: none;
+    }
+}
+
+.ecommerce-slider-area {
+    .eccomerce-single-slider {
+        .ecco-thumb {
+            width: 280px;
+        }
+
+    }
+
+    cursor: pointer;
+}
+
+.payment-area {
+    .nav-tabs .nav-link {
+        border: 1px solid $border-color;
+    }
+}

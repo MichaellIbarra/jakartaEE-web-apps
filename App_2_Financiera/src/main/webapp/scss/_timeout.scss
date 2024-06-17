@@ -1,0 +1,30 @@
+/* :: Timeout CSS */
+
+#session-timeout-dialog {
+    .close {
+        padding: 0;
+        font-size: 22px;
+        margin: 0;
+    }
+
+    .modal-content {
+        border: none;
+    }
+
+    .modal-header {
+        border-bottom: none;
+    }
+
+    .modal-footer {
+        border-top: none;
+    }
+
+    .modal-body {
+        border: 1px solid #f1f2f3;
+        p{
+            span{
+                color: $primary-color;
+            }
+        }
+    }
+}

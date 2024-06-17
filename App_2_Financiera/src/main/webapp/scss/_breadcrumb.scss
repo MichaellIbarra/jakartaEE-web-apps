@@ -1,0 +1,26 @@
+/* :: Breadcrumb CSS */
+
+.custom-breadcrumb-bg-img {
+    height: 150px;
+    padding: 45px;
+    margin-bottom: 30px;
+    border-radius: .25px;
+    position: relative;
+    z-index: 1;
+
+    @media #{$breakpoint-xs} {
+        padding: 30px 15px;
+    }
+
+    .breadcrumb-title {
+        font-size: 24px;
+        color: $white-color;
+    }
+
+    h6 {
+        color: $white-color;
+        font-size: 14px;
+        margin-bottom: 0;
+        font-weight: 400;
+    }
+}

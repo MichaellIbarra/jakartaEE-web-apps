@@ -1,0 +1,18 @@
+/* :: Typography CSS */
+
+.link-btn-typo {
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.tpography-unordered {
+    ul {
+        margin: 5px;
+        padding: 10px;
+
+        li {
+            list-style: disc;
+            line-height: 1.7;
+        }
+    }
+}
