@@ -31,6 +31,5 @@ Se Desarrollo dos aplicaciones web que permita Calcular el cuadro de cuotas de u
 
 Dev: [MichaellIbarra](https://github.com/MichaellIbarra)
 
-Dev: [AzumiRojas](https://github.com/Azumicristina)
 
 
